@@ -1,0 +1,134 @@
+/* Main Container */
+.movie-list-container {
+    min-height: 100vh;
+    width: 210vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f3f4f6; /* Light grey background for clean look */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title */
+  .movie-list-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Filters */
+  .filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-select,
+  .filter-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.3s;
+  }
+  
+  .filter-select:hover,
+  .filter-input:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Movie Grid */
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Movie Card */
+  .movie-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-title {
+    font-size: 1.2rem;
+    color: #444;
+    margin: 10px 0;
+  }
+  
+  .movie-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .movie-details {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 10px;
+  }
+  
+  .edit-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .edit-link:hover {
+    background: #007BFF;
+    color: white;
+  }
+  
+  /* Pagination Controls */
+  .pagination-controls {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .pagination-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007BFF;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .pagination-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .pagination-button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  .pagination-info {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
